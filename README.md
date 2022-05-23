@@ -1,13 +1,21 @@
-# Next.js starter
+# Github Organization Explorer
 
-### Running locally
+### Demo
+
+### Install
 
 ```
-$ yarn
-$ yarn prepare
-$ yarn dev
+yarn
 ```
 
-### Deploy
+### Development
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdestroymayor%2Fnextjs-tailwindcss-template)
+```
+yarn dev
+```
+
+### Architecture
+
+### References
+
+[Github API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories)
