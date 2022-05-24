@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import Head from 'next/head';
 
-import useQuery from '@/hooks/use-query.hook';
-import useOnScreen from '@/hooks/use-on-screen';
-
 import { sorts, types, directions } from '@/constants/filter';
+
+import useQuery from '@/hooks/use-query.hook';
+import useOnScreen from '@/hooks/use-on-screen.hook';
 
 import Header from '@/components/Header';
 import Filter from '@/components/Filter';
@@ -41,8 +41,8 @@ export default function Home() {
           <LoadMore
             containerRef={containerRef}
             loading={isLoading}
-            isLoadingMore={isLoadingMore}
             error={isError}
+            isLoadingMore={isLoadingMore}
             isReachingEnd={isReachingEnd}
           />
         </div>
