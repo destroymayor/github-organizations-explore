@@ -4,7 +4,7 @@ import ListItemSkeleton from '@/components/ListItemSkeleton';
 export default function List(props) {
   const { data, loading, error, isEmpty } = props;
 
-  if (error) return <div className="text-red-600">發生錯誤，請稍後再試</div>;
+  if (error) return <div className="text-red-600">An error occurred while fetching the data.</div>;
 
   return (
     <div className="flex flex-col rounded-md border border-zinc-600">

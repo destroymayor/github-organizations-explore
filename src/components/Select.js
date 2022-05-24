@@ -5,17 +5,7 @@ import useOnClickOutside from '@/hooks/use-on-click-outside.hook';
 import clsx from 'clsx';
 
 const Select = (props) => {
-  const {
-    label,
-    disabled,
-    className,
-    options = [],
-    value,
-    renderItem,
-    onChange,
-    onFocus,
-    onBlur,
-  } = props;
+  const { label, disabled, className, options = [], value, renderItem, onChange } = props;
   const ref = useRef();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -46,10 +36,8 @@ const Select = (props) => {
             `${className}`
           )}
           onClick={handleToggle}
-          onFocus={onFocus}
-          onBlur={onBlur}
         >
-          <span className="truncate pr-2">{value === '' ? '請選擇' : value}</span>
+          <span className="truncate pr-2">{value === '' ? 'Select' : value}</span>
           <span className={`${disabled ? '' : 'group-hover:text-zinc-600'}`}>
             {isOpen ? (
               <svg

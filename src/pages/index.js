@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Github Organizations Explorer</title>
+        <title>Meta</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

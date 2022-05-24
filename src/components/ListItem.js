@@ -14,7 +14,12 @@ export default function ListItem(props) {
       </div>
       <p className="text-zinc-400">{description}</p>
       <div className="flex items-center gap-4 pt-2 text-sm text-zinc-400">
-        {language && <span>{language}</span>}
+        {language && (
+          <div className="flex items-center gap-2">
+            <div className="h-4 w-4 rounded-full bg-sky-700"></div>
+            {language}
+          </div>
+        )}
         {license?.name && <span>{license?.spdx_id}</span>}
         {updated_at && <span>Update on {new Date(updated_at).toLocaleDateString()}</span>}
       </div>

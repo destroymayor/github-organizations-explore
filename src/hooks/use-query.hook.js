@@ -4,7 +4,7 @@ import fetcher from '@/lib/fetcher';
 import useSWR from 'swr';
 
 const GITHUB_ORGS_URL = 'https://api.github.com/orgs';
-const ORGANIZATION = `dcard`;
+const ORGANIZATION = `facebook`;
 
 export default function useQuery({ filter, isVisible }) {
   const [results, setResults] = useState([]);

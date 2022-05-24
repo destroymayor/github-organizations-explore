@@ -5,7 +5,7 @@ export default function LoadMore(props) {
 
   return (
     <div ref={containerRef} className="h-10">
-      {loading && isLoadingMore && <div>正在載入更多...</div>}
+      {loading && isLoadingMore && <div>Loading...</div>}
       {!loading && isReachingEnd && <div className="p-2">No more data</div>}
     </div>
   );
